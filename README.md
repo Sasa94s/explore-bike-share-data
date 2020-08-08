@@ -23,11 +23,15 @@ The summary files has the following column names:
 - `day_of_week`
 - `user_type`
 
+**Note:** Cleaned and formatted data exists in `formatted_data` directory and used in the interactive standard Python program `bike_share.py`.
+
 ## Getting Started
 
 You can simply open `Bike_Share_Analysis.html` file using any browser.
 
 ### Prerequisites
 - Download [Anaconda](https://conda.io/miniconda.html) environment
+
 ### How to run
-Open `Bike_Share_Analysis.ipynb` using Jupyter Notebook.
+For Insights: Open `Bike_Share_Analysis.ipynb` using Jupyter Notebook.
+For Interactive Analysis: Run `python bike_share.py` in terminal.
