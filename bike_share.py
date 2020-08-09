@@ -67,6 +67,9 @@ def load_data(city, month, day):
     df[constants.START_TIME] = pd.to_datetime(df[constants.START_TIME])
     df[constants.END_TIME] = pd.to_datetime(df[constants.END_TIME])
 
+    # show the same sample data before filtering
+    show_sample_raw_data(df)
+
     if month != 0:
         df = df[df[constants.START_TIME].dt.month == month]
 
@@ -245,7 +248,6 @@ def main():
             if len(df) == 0:
                 raise errors.ValidationError('No data to be displayed. Please change your filter options.')
 
-            show_sample_raw_data(df)
             time_stats(df)
             station_stats(df)
             trip_duration_stats(df)
