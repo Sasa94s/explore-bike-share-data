@@ -14,6 +14,7 @@ city_prompt_msg = 'Would you like to see data for Chicago, New York, or Washingt
 month_prompt_msg = \
     'Which month? January, February, March, April, May, or June? '
 day_prompt_msg = 'Which day? Please type your response as an integer (e.g. 1=Sunday). '
+sample_data_prompt_msg = 'Do you want to show a sample of raw data? (yes/no) '
 
 # -- Arrays --
 ALLOWED_FILTER_CHOICES = [

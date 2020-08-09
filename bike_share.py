@@ -224,6 +224,16 @@ def user_stats(df):
     print('-' * 40)
 
 
+def show_sample_raw_data(df):
+    show_sample_data_flag = input(constants.sample_data_prompt_msg)
+    if show_sample_data_flag != 'yes':
+        return
+
+    print('-' * 10)
+    print(df.head())
+    print('-' * 10)
+
+
 def main():
     global CITY_CHOICE
 
@@ -235,6 +245,7 @@ def main():
             if len(df) == 0:
                 raise errors.ValidationError('No data to be displayed. Please change your filter options.')
 
+            show_sample_raw_data(df)
             time_stats(df)
             station_stats(df)
             trip_duration_stats(df)
